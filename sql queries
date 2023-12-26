@@ -1,0 +1,50 @@
+//1
+CREATE TABLE `data` (
+  `username` varchar(15) NOT NULL,
+  `password` varchar(15) DEFAULT NULL,
+  `email` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+//2
+INSERT INTO `data` VALUES ('a','a','a'),('akanksha','edsf','afyhhjjkk@gmail.com'), ...;
+//3
+CREATE TABLE `detail` (
+  `source` varchar(20) DEFAULT NULL,
+  `destination` varchar(20) DEFAULT NULL,
+  `distance` varchar(10) DEFAULT NULL,
+  `traina` varchar(20) DEFAULT NULL,
+  `trainb` varchar(20) DEFAULT NULL,
+  `trainc` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+//4
+INSERT INTO `detail` VALUES ('DELHI','MUMBAI','3000','RAJDHANI EXPRESS','INTERCITY EXPRESS','SHATABDI EXPRESS'), ...;
+//5
+CREATE TABLE `mainpassenger` (
+  `name` varchar(20) DEFAULT NULL,
+  `aadhar` varchar(15) NOT NULL,
+  `AGE` varchar(3) DEFAULT NULL,
+  PRIMARY KEY (`aadhar`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+//6
+CREATE TABLE `passenger` (
+  `name` varchar(20) DEFAULT NULL,
+  `aadhar` varchar(15) NOT NULL,
+  `AGE` varchar(3) DEFAULT NULL,
+  `pnr` varchar(6) DEFAULT NULL,
+  PRIMARY KEY (`aadhar`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+//7
+INSERT INTO `passenger` VALUES ('trial 8','+65158653210','8','H92R51'),('dshkdbkja','12486541','4','H27R83'), ...;
+
+//8
+CREATE TABLE `train` (
+  `source` varchar(20) NOT NULL,
+  `destination` varchar(20) DEFAULT NULL,
+  `distance` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`source`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+//9
+INSERT INTO `train` VALUES ('DELHI','MUMBAI','3000')
+
